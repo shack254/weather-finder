@@ -46,19 +46,21 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="split left">
-          <Title />
-        </div>
-        <div className="split right">
-          <Form getWeather={this.getWeather} />
-          <Weather
-            temperature={this.state.temperature}
-            city={this.state.city}
-            country={this.state.country}
-            humidity={this.state.humidity}
-            description={this.state.description}
-            error={this.state.error}
-          />
+        <div className="page">
+          <div className="col-bg split">
+            <Title />
+          </div>
+          <div className="split">
+            <Form getWeather={this.getWeather} />
+            <Weather
+              temperature={this.state.temperature}
+              city={this.state.city}
+              country={this.state.country}
+              humidity={this.state.humidity}
+              description={this.state.description}
+              error={this.state.error}
+            />
+          </div>
         </div>
       </React.Fragment>
     );

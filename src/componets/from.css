@@ -1,0 +1,16 @@
+.btn {
+  border: none;
+  margin: 20px;
+  padding: 24px;
+  width: 220px;
+  cursor: pointer;
+  background-size: 200%;
+  transition: 0.6s !important;
+}
+.btn1 {
+  background-image: linear-gradient(to left, #04282a, #00ffff, #04282a);
+}
+
+.btn:hover {
+  background-position: right;
+}

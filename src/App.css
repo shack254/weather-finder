@@ -1,24 +1,42 @@
+@import url("https://fonts.googleapis.com/css?family=Coustard|Merriweather:300i&display=swap");
+* {
+  color: #fcfafc;
+}
+.page {
+  background: #0a040a;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Merriweather", serif;
+}
 .split {
-  width: 50%;
+  flex: 1;
   height: 100vh;
-
+  position: relative;
+}
+.col-bg {
+  background: url(https://images.wallpaperscraft.com/image/lightning_clouds_sky_overcast_120406_1920x1080.jpg)
+    no-repeat center;
+}
+.middle {
   position: absolute;
-  z-index: 1;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -124%);
+  text-align: center;
 }
-
-/* Control the left side  */
-.left {
-  left: 0;
-  background-size: cover;
-  background: url(https://initiate.alphacoders.com/images/102/cropped-640-960-1024083.png?3313)
-    no-repeat;
-}
-
-/* Control the right side */
-.right {
-  right: 0;
+input[type="text"] {
+  background: transparent;
+  margin: none;
+  border: none;
+  border-bottom: 1px solid #37a2ad;
 }
 .title {
-  position: relative;
+  font-family: "Coustard", serif;
+}
+
+.f30 {
+  font-size: 30px;
+}
+.f20 {
+  font-size: 20px;
 }
